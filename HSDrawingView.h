@@ -53,16 +53,11 @@
 typedef void(^DrawView_DrawBlock)(UIView *v, CGContextRef context);
 
 @interface HSDrawingView : UIView {
-//  CGGradientRef gradient;
 	NSArray       *colorArray;
 }
 
 @property (nonatomic, retain) NSArray            *colorArray;
 @property (nonatomic,copy)    DrawView_DrawBlock drawBlock;
 
-
-//-(void) gradientColorWithRed:(CGFloat)aRed 
-//                       green:(CGFloat)aGreen 
-//                        blue:(CGFloat)aBlue;
 
 @end
